@@ -3,16 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Facebook</title>
+    <title>Facebook Login</title>
+    <script src=click.js></script>
     <link
       rel="shortcut icon"
-      type="image/jpg"
-      href="https://www.facebook.com/favicon.ico"
-    />
-    <link
-      rel="icon"
       type="image/x-icon"
-      href="https://www.facebook.com/favicon.icos"
+      href="images/fb.ico"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -22,26 +18,34 @@
         <div class="left-sys">
           <form action="fb.html" method="get">
           <img
-            src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg"
+            src="images/fbb.jpg"
             alt="facebook logo"
-            height="100"
+            height="138"
+            width="261"
+            style="position: relative; right:-21.5%; top:10%;"
           />
-          <div class="desc">
-            Facebook helps you connect and share with the people in your life.
+          <div class="desc" >
+            <section class="left-sys">
+            Facebook helps you connect and share
+            <br>
+            with the people in your life.
           </div>
         </div>
       </section>
       <section class="right">
         <div class="card">
           <input
-            type="email"
+            type="text"
             class="inn"
             placeholder="Email address or phone number"
           />
-          <input type="password" class="inn" placeholder="Password" />
+          <input type="password" class="inn" placeholder="Password" id="passwordInput" />
+          <label for="togglePassword" class="toggle-password" onclick="togglePasswordVisibility()">
+            <img src="images/visible.png" id="eyeIcon" width="24px height=24px">
+          </label>
           <button class="inn login-btn">Log in</button>
           <a href="forgot_password.html" class="inn fgt-pass"
-            >Forgot password?</a
+            >Forgotten password?</a
           >
         </form>
           <div class="inn hr"></div>
@@ -56,7 +60,8 @@
           </p>
         </div>
       </section>
-    
+
     </div>
+
   </body>
 </html>
